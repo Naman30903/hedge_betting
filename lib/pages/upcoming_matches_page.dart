@@ -4,7 +4,7 @@ import '../models/betting_model.dart';
 import '../widgets/match_card.dart';
 
 class UpcomingMatchesPage extends StatefulWidget {
-  const UpcomingMatchesPage({Key? key}) : super(key: key);
+  const UpcomingMatchesPage({super.key});
 
   @override
   State<UpcomingMatchesPage> createState() => _UpcomingMatchesPageState();
@@ -89,6 +89,8 @@ class _UpcomingMatchesPageState extends State<UpcomingMatchesPage> {
                   match: match,
                   bettingModel: bettingModel,
                   isLive: false,
+                  matchData: {},
+                  onTap: () {},
                 );
               },
             ),
